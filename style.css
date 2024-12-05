@@ -13,16 +13,16 @@ body {
 #buttons {
     display: grid;
     gap: 15px; /* Adds space between buttons */
-    max-width: 300px;
+    max-width: 80%;
     margin: auto;
 }
 
 /* Style the display */
 #display {
-    height: 1px;
+    height: 10vh;
     background-color: #eee;
     border: 1px solid #ccc;
-    font-size: 1.5rem;
+    font-size: 3vw;
     text-align: right;
     padding: 10px;
     margin-bottom: 10px;
@@ -69,4 +69,9 @@ body {
 /* Add hover effects */
 button:hover {
     opacity: 0.9;
+}
+
+#numbers button, #operators button, #clear, #equal {
+    font-size: 1.5rem; /* Bigger text */
+    padding: 15px; /* More space inside buttons */
 }
