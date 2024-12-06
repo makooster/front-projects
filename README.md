@@ -10,7 +10,7 @@ Responsive design for better usability across devices.
 User-friendly interface with smooth button interactions.
 
 ## How to Run
-1. Download the project files: [Download Here](https://github.com/makooster/front-projects/calculator/calculator.zip)
+1. Download the project files: [Download Here](https://github.com/makooster/front-projects/calculator.zip)
 2. Open `main.html` in your browser.
 
 
