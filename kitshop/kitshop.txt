@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Kit Shop</title>
+  <style>
+   
+    .background-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1; 
+    }
+
+
+    .background-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; 
+      filter: blur(1px); 
+    }
+
+  
+    .content {
+      position: relative;
+      z-index: 1; 
+      max-width: 600px;
+      margin: 100px auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.7); 
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    h3 {
+      text-align: center;
+    }
+
+    .item {
+      display: inline-block;
+      text-align: center;
+      margin: 20px;
+    }
+
+    .item img {
+      display: block;
+      margin: 0 auto;
+      width: 100px;
+      height: auto;
+      border: round(2px);
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    #demo {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #333;
+      text-align: center;
+    }
+    
+    .size-options {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .size-options label {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 5px 10px;
+      background-color: #f9f9f9;
+    }
+
+    .size-options input[type="number"] {
+      width: 50px;
+    }
+
+    button {
+      display: block;
+      margin: 20px auto; 
+      background-color: green;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: darkgreen;
+    }
+    
+    .button-container {
+      display: flex;
+      justify-content: center; 
+      margin-top: 20px;        
+    }
+
+  </style>
+</head>
+<body>
+
+
+  <div class="background-container">
+    <img src="https://st4.depositphotos.com/2124563/40221/i/450/depositphotos_402218168-stock-photo-flag-football-club-real-madrid.jpg" alt="Background">
+  </div>
+
+
+  <div class="content">
+    <h1>Online Kit Shop</h1>
+    <h3>Our Goods</h3>
+
+    <div class="item">
+      <input type="checkbox" id="kit1" name="kit" value="Home Kit" data-price="50">
+      <img src="https://www.sportsdirect.com/images/products/36738701_l.jpg" alt="Home Kit">
+      <label for="kit1">Home Kit ($50)</label>
+      <div class="size-options">
+    <label>
+      <input type="checkbox" class="size-checkbox" data-kit="kit1" data-size="S"> S
+      <input type="number" class="size-quantity" data-kit="kit1" data-size="S" min="1" max="10" placeholder="Qty">
+    </label>
+    <label>
+      <input type="checkbox" class="size-checkbox" data-kit="kit1" data-size="M"> M
+      <input type="number" class="size-quantity" data-kit="kit1" data-size="M" min="1" max="10" placeholder="Qty">
+    </label>
+    <label>
+      <input type="checkbox" class="size-checkbox" data-kit="kit1" data-size="L"> L
+      <input type="number" class="size-quantity" data-kit="kit1" data-size="L" min="1" max="10" placeholder="Qty">
+    </label>
+    <label>
+      <input type="checkbox" class="size-checkbox" data-kit="kit1" data-size="XL"> XL
+      <input type="number" class="size-quantity" data-kit="kit1" data-size="XL" min="1" max="10" placeholder="Qty">
+    </label>
+    </div>
+
+    <div class="item">
+      <input type="checkbox" id="kit2" name="kit" value="Away Kit" data-price="60">
+      <img src="https://images.footballfanatics.com/real-madrid/real-madrid-adidas-away-shirt-2024-25-kids_ss5_p-201163134+pv-1+u-b9x3rvcyqqxf3elvnplz+v-odqofikoslvjoplgotn3.jpg?_hv=2&w=900" alt="Away Kit">
+      <label for="kit2">Away Kit ($60)</label>
+      <div class="size-options">
+    <label>
+      <input type="checkbox" class="size-checkbox" data-kit="kit2" data-size="S"> S
+      <input type="number" class="size-quantity" data-kit="kit2" data-size="S" min="1" max="10" placeholder="Qty">
+    </label>
+    <label>
+      <input type="checkbox" class="size-checkbox" data-kit="kit2" data-size="M"> M
+      <input type="number" class="size-quantity" data-kit="kit2" data-size="M" min="1" max="10" placeholder="Qty">
+    </label>
+    <label>
+      <input type="checkbox" class="size-checkbox" data-kit="kit2" data-size="L"> L
+      <input type="number" class="size-quantity" data-kit="kit2" data-size="L" min="1" max="10" placeholder="Qty">
+    </label>
+    <label>
+      <input type="checkbox" class="size-checkbox" data-kit="kit2" data-size="XL"> XL
+      <input type="number" class="size-quantity" data-kit="kit2" data-size="XL" min="1" max="10" placeholder="Qty">
+    </label>
+    </div>
+
+    <div class="item">
+      <input type="checkbox" id="kit3" name="kit" value="Third Kit" data-price="70">
+      <img src="https://cdn.myikas.com/images/6d452771-fa42-482d-a9a5-b47e65a5bf47/44733be2-7452-4280-8913-d4fa1dfce289/1080/iy1763-a.jpg" alt="Third Kit">
+      <label for="kit3">Third Kit ($70)</label>
+      <div class="size-options">
+    <label>
+      <input type="checkbox" class="size-checkbox" data-kit="kit3" data-size="S"> S
+      <input type="number" class="size-quantity" data-kit="kit3" data-size="S" min="1" max="10" placeholder="Qty">
+    </label>
+    <label>
+      <input type="checkbox" class="size-checkbox" data-kit="kit3" data-size="M"> M
+      <input type="number" class="size-quantity" data-kit="kit3" data-size="M" min="1" max="10" placeholder="Qty">
+    </label>
+    <label>
+      <input type="checkbox" class="size-checkbox" data-kit="kit3" data-size="L"> L
+      <input type="number" class="size-quantity" data-kit="kit3" data-size="L" min="1" max="10" placeholder="Qty">
+    </label>
+    <label>
+      <input type="checkbox" class="size-checkbox" data-kit="kit3" data-size="XL"> XL
+      <input type="number" class="size-quantity" data-kit="kit3" data-size="XL" min="1" max="10" placeholder="Qty">
+    </label>
+    </div>
+
+    <div class="item">
+      <input type="checkbox" id="kit4" name="kit" value="Special Kit" data-price="100">
+      <img src="https://www.soccerbox.com/media/catalog/product/cache/9d14d56c606ce6e31fa44a7bf9aa05c5/r/e/real-madrid-eu-training-jersey-24-25.png" alt="Special Kit">
+      <label for="kit4">Special Kit ($100)</label>
+      <div class="size-options">
+    <label>
+      <input type="checkbox" class="size-checkbox" data-kit="kit4" data-size="S"> S
+      <input type="number" class="size-quantity" data-kit="kit4" data-size="S" min="1" max="10" placeholder="Qty">
+    </label>
+    <label>
+      <input type="checkbox" class="size-checkbox" data-kit="kit4" data-size="M"> M
+      <input type="number" class="size-quantity" data-kit="kit4" data-size="M" min="1" max="10" placeholder="Qty">
+    </label>
+    <label>
+      <input type="checkbox" class="size-checkbox" data-kit="kit4" data-size="L"> L
+      <input type="number" class="size-quantity" data-kit="kit4" data-size="L" min="1" max="10" placeholder="Qty">
+    </label>
+    <label>
+      <input type="checkbox" class="size-checkbox" data-kit="kit4" data-size="XL"> XL
+      <input type="number" class="size-quantity" data-kit="kit4" data-size="XL" min="1" max="10" placeholder="Qty">
+    </label>
+	
+    
+    
+    <p id="demo"></p>
+  </div>
+    <div class="button-container">
+          <button onclick="calculateTotal()">Calculate Total</button>
+        </div>
+  <script>
+function calculateTotal() {
+  const kits = document.querySelectorAll('input[name="kit"]:checked');
+  let total = 0;
+  const selectedDetails = [];
+
+  kits.forEach(kit => {
+    const kitId = kit.id;
+    const kitName = kit.value;
+    const kitPrice = parseFloat(kit.getAttribute('data-price'));
+
+    const sizeCheckboxes = document.querySelectorAll(`.size-checkbox[data-kit="${kitId}"]:checked`);
+
+    sizeCheckboxes.forEach(sizeCheckbox => {
+      const size = sizeCheckbox.getAttribute('data-size');
+      const quantityInput = document.querySelector(`.size-quantity[data-kit="${kitId}"][data-size="${size}"]`);
+      const quantity = quantityInput && quantityInput.value ? parseInt(quantityInput.value) : 0;
+
+      if (quantity > 0) {
+        total += kitPrice * quantity;
+        selectedDetails.push(`${kitName} (Size: ${size}, Quantity: ${quantity})`);
+      }
+    });
+  });
+
+  const display = selectedDetails.length
+    ? `You selected: ${selectedDetails.join(', ')}. Total price: $${total.toFixed(2)}`
+    : 'No kits selected.';
+  document.getElementById('demo').textContent = display;
+}
+
+
+document.addEventListener('change', (event) => {
+  if (event.target.classList.contains('size-checkbox') || event.target.classList.contains('size-quantity')) {
+    const kitId = event.target.getAttribute('data-kit');
+    const kitCheckbox = document.getElementById(kitId);
+
+    if (kitCheckbox) {
+      kitCheckbox.checked = true; 
+    }
+  }
+});
+
+
+  </script>
+  
+</body>
+</html>
