@@ -1,0 +1,15 @@
+{
+    "builds": [
+      {
+        "src": "code-editor/**",  
+        "use": "@vercel/static"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/code-editor/$1"
+      }
+    ]
+  }
+  
